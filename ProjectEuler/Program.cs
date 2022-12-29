@@ -12,6 +12,7 @@ var problems = new List<IProblem>
     new TenThousandFirstPrime(),
     new LargestProductInASeries(),
     new SpecialPythagoreanTriplet(),
+    new SummationOfPrimes(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
