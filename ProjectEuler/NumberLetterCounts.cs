@@ -58,7 +58,6 @@ namespace ProjectEuler
                 {
                     stringNumber += vocabular[unitsCount];
                 }
-                Console.WriteLine(stringNumber);
                 count += stringNumber.Length;
             }
 
