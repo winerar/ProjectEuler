@@ -13,6 +13,7 @@ var problems = new List<IProblem>
     new LargestProductInASeries(),
     new SpecialPythagoreanTriplet(),
     new SummationOfPrimes(),
+    new PowerDigitSum(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
