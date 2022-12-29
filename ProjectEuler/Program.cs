@@ -29,7 +29,7 @@ while (!exit)
         PrintProblemTitle(problem);
     }
 
-    Console.WriteLine("Enter problem ID: ");
+    Console.WriteLine("\nEnter problem ID: ");
     int.TryParse(Console.ReadLine(), out int id);
     if (!orderedProblems.ContainsKey(id))
     {
@@ -41,7 +41,7 @@ while (!exit)
         PrintProblem(orderedProblems[id]);
     }
 
-    Console.WriteLine("\"Esc\" to exit. Other key to problem list.");
+    Console.WriteLine("\n\"Esc\" to exit. Other key to show problem list.");
     switch (Console.ReadKey().Key)
     {
         case ConsoleKey.Escape:
@@ -58,7 +58,7 @@ void PrintProblem(IProblem problem)
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine($"\n{problem.Description}\n");
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine($"Solution: {problem.Solution}.\n");
+    Console.WriteLine($"Solution: {problem.Solution}.");
     Console.ResetColor();
 }
 
