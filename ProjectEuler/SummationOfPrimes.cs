@@ -22,9 +22,9 @@ namespace ProjectEuler
         {
             long sum = 0;
 
-            for (int i = 2; i < 2000000; i++)
+            for (int i = 2; i < limit; i++)
             {
-                if (isPrime(i))
+                if (IsPrime(i))
                 {
                     sum += i;
                 }
@@ -33,13 +33,25 @@ namespace ProjectEuler
             return sum;
         }
 
-        private bool isPrime(int number)
+        private static bool IsPrime(int number)
         {
-            if (number < 2) return false;
-
-            for (int i = 2; i <= Math.Sqrt(number); i++)
+            if (number < 2)
             {
-                if (number % i == 0)
+                return false;
+            }
+            if (number == 2 || number == 3)
+            {
+                return true;
+            }
+            if ((number & 1) == 0 || number % 3 == 0)
+            {
+                return false;
+            }
+
+            int sqrtN = (int)Math.Sqrt(number) + 1;
+            for (int i = 6; i <= sqrtN; i += 6)
+            {
+                if (number % (i - 1) == 0 || number % (i + 1) == 0)
                 {
                     return false;
                 }
