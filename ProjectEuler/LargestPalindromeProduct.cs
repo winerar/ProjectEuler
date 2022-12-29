@@ -18,7 +18,7 @@ namespace ProjectEuler
 
         private int FindLargestProduct()
         {
-            int largest = 0;
+            int largestProduct = 0;
 
             bool found = false;
             int firstHalf = 998;
@@ -39,13 +39,13 @@ namespace ProjectEuler
                         found = true;
                         factors[0] = palindrome / i;
                         factors[1] = i;
-                        largest = palindrome;
+                        largestProduct = palindrome;
                         break;
                     }
                 }
             }
 
-            return largest;
+            return largestProduct;
         }
 
         private int makePalindrome(int firstHalf)
