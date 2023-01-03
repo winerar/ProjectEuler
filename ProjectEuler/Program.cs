@@ -1,4 +1,5 @@
 ﻿using ProjectEuler;
+using ProjectEuler.Problems;
 
 var problems = new List<IProblem>
 {
@@ -14,6 +15,7 @@ var problems = new List<IProblem>
     new SpecialPythagoreanTriplet(),
     new SummationOfPrimes(),
     new PowerDigitSum(),
+    new LargestProductInAGrid(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
