@@ -18,6 +18,7 @@ var problems = new List<IProblem>
     new LargestProductInAGrid(),
     new FactorialDigitSum(),
     new LargeSum(),
+    new LongestCollatzSequence(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
