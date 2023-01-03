@@ -16,6 +16,8 @@ var problems = new List<IProblem>
     new SummationOfPrimes(),
     new PowerDigitSum(),
     new LargestProductInAGrid(),
+    new FactorialDigitSum(),
+    new LargeSum(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
