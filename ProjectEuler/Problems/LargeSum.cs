@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectEuler.Problems
 {
@@ -120,10 +117,10 @@ namespace ProjectEuler.Problems
         private string GetDigits()
         {
             var sumString = Sum().ToString();
-            return sumString.Substring(0, 10);
+            return sumString[..10];
         }
 
-        private BigInteger Sum()
+        private static BigInteger Sum()
         {
             BigInteger result = 0;
 
@@ -135,7 +132,7 @@ namespace ProjectEuler.Problems
             return result;
         }
 
-        private static BigInteger[] numbers = new[]
+        private static readonly BigInteger[] numbers = new[]
         {
             BigInteger.Parse("37107287533902102798797998220837590246510135740250"),
             BigInteger.Parse("46376937677490009712648124896970078050417018260538"),
