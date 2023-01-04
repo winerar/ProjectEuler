@@ -19,6 +19,7 @@ var problems = new List<IProblem>
     new FactorialDigitSum(),
     new LargeSum(),
     new LongestCollatzSequence(),
+    new OneThousandDigitFibonacciNumber(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
