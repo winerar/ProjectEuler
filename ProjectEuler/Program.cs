@@ -20,6 +20,7 @@ var problems = new List<IProblem>
     new LargeSum(),
     new LongestCollatzSequence(),
     new OneThousandDigitFibonacciNumber(),
+    new SelfPowers(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
