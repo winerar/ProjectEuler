@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
 
 namespace ProjectEuler.Problems
 {
@@ -42,9 +37,9 @@ namespace ProjectEuler.Problems
             var fibonacci = new List<BigInteger>() { 1, 1, };
             while (fibonacci.Last().ToString().Length < digitsNumber)
             {
-                fibonacci.Add(fibonacci.Last() + fibonacci[fibonacci.Count - 2]);
+                fibonacci.Add(fibonacci.Last() + fibonacci[^2]);
             }
-            return fibonacci.Count();
+            return fibonacci.Count;
         }
     }
 }
