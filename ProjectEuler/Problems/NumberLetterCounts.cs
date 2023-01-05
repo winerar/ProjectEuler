@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace ProjectEuler.Problems
+﻿namespace ProjectEuler.Problems
 {
     public class NumberLetterCounts : IProblem
     {

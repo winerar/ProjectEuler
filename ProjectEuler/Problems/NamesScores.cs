@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjectEuler.Problems
+﻿namespace ProjectEuler.Problems
 {
     public class NamesScores : IProblem
     {
@@ -27,7 +21,7 @@ namespace ProjectEuler.Problems
         private int FindTotal()
         {
             string path = @"Files\p022_names.txt";
-            
+
             if (!File.Exists(path))
             {
                 return -1;
@@ -55,7 +49,7 @@ namespace ProjectEuler.Problems
             int value = 0;
             foreach (char ch in word)
             {
-                value+= ch - 64;
+                value += ch - 64;
             }
             return value;
         }

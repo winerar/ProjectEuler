@@ -1,8 +1,4 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-
-namespace ProjectEuler.Problems
+﻿namespace ProjectEuler.Problems
 {
     public class LargestProductInAGrid : IProblem
     {

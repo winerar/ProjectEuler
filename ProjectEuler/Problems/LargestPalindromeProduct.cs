@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace ProjectEuler
+﻿namespace ProjectEuler
 {
     public class LargestPalindromeProduct : IProblem
     {
