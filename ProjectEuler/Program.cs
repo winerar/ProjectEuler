@@ -22,6 +22,7 @@ var problems = new List<IProblem>
     new OneThousandDigitFibonacciNumber(),
     new SelfPowers(),
     new NamesScores(),
+    new AmicableNumbers(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
