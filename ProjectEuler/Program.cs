@@ -21,6 +21,7 @@ var problems = new List<IProblem>
     new LongestCollatzSequence(),
     new OneThousandDigitFibonacciNumber(),
     new SelfPowers(),
+    new NamesScores(),
 };
 var orderedProblems = new SortedList<int, IProblem>();
 
